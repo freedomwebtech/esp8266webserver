@@ -11,7 +11,7 @@ led2.value(1)
 
 
 s = socket.socket()
-s.bind(('192.168.0.102', 80))
+s.bind(('0.0.0.0', 80))
 s.listen(5)
 html = """
         <html>  <h1> <center>"ESP8266 WEB SERVER" </center></h1>
