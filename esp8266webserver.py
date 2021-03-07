@@ -1,8 +1,8 @@
 import socket
 from machine import Pin
-led = machine.Pin(05, Pin.OUT)
-led1 = machine.Pin(16, Pin.OUT)
-led2 = machine.Pin(2, Pin.OUT)
+led = machine.Pin(05, Pin.OUT)         
+led1 = machine.Pin(04, Pin.OUT)
+led2 = machine.Pin(14, Pin.OUT)
 
 
 led.value(1)
@@ -67,10 +67,10 @@ while True:
        led.value(1)
     if led1_on == 6:
        print('LED ON')
-       led1.value(0)
+       led1.value(1)
     if led1_off == 6:
        print('LED OFF')
-       led1.value(1)   
+       led1.value(0)   
        
     if led2_on == 6:
        print('LED ON')
